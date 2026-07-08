@@ -1,34 +1,73 @@
-<!-- build trigger -->
-
 <!DOCTYPE html>
 <html lang="it">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TechVision - Informatica e Tecnologia</title>
+        <meta name="description" content="TechVision: guide, tutorial e novità su hardware, software, sicurezza e tecnologia, spiegati in modo semplice.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
             <h1>TechVision</h1>
-            <nav><a href="index.html">Home</a><a href="articoli.html">Articoli</a><a href="contatti.html">Contatti</a></nav>
+            <nav>
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="articoli.html">Articoli</a>
+                <a href="contatti.html">Contatti</a>
+            </nav>
         </header>
+
         <main>
-            <section class="hero">
-                <h2>Il mondo dell'informatica spiegato in modo semplice</h2>
-                <p>Guide, tutorial e novità su hardware, software, sicurezza e tecnologia.</p>
-            </section>
-            <section>
-                <h2>Articoli recenti</h2>
-                <div class="cards">
-                <div class="card"><h3>Assemblare un PC</h3><p>Guida per scegliere i componenti giusti.</p></div>
-                <div class="card"><h3>Sicurezza online</h3><p>Come proteggere i tuoi dati.</p></div>
-                <div class="card"><h3>Linux per principianti</h3><p>Primi passi nel mondo Linux.</p></div>
+            <section class="terminal hero" aria-label="Presentazione del sito">
+                <div class="terminal-bar">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                    <span class="terminal-title">visitatore@techvision: ~</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="line"><span class="prompt">$</span>whoami</p>
+                    <p class="output lead">Il mondo dell'informatica spiegato in modo semplice</p>
+                    <p class="line"><span class="prompt">$</span>cat missione.txt</p>
+                    <p class="output">Guide, tutorial e novità su hardware, software, sicurezza e tecnologia.</p>
+                    <p class="line"><span class="prompt">$</span><span class="cursor" aria-hidden="true">_</span></p>
                 </div>
             </section>
-            <div class="ads">Spazio Google AdSense (da inserire dopo l'approvazione)</div>
+
+            <section aria-labelledby="articoli-recenti">
+                <div class="section-heading">
+                    <span class="path">~/articoli</span>
+                    <h2 id="articoli-recenti">recenti</h2>
+                </div>
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-head"><span>assemblare-un-pc</span><span class="ext">.md</span></div>
+                        <h3>Assemblare un PC</h3>
+                        <p>Guida per scegliere i componenti giusti.</p>
+                        <a class="read-more" href="articoli.html">leggi →</a>
+                    </article>
+                    <article class="card">
+                        <div class="card-head"><span>sicurezza-online</span><span class="ext">.md</span></div>
+                        <h3>Sicurezza online</h3>
+                        <p>Come proteggere i tuoi dati.</p>
+                        <a class="read-more" href="articoli.html">leggi →</a>
+                    </article>
+                    <article class="card">
+                        <div class="card-head"><span>linux-per-principianti</span><span class="ext">.md</span></div>
+                        <h3>Linux per principianti</h3>
+                        <p>Primi passi nel mondo Linux.</p>
+                        <a class="read-more" href="articoli.html">leggi →</a>
+                    </article>
+                </div>
+            </section>
+
+            <div class="ads"># Spazio Google AdSense (da inserire dopo l'approvazione)</div>
         </main>
-        <footer>© 2026 TechVision - Privacy - Cookie Policy</footer>
+
+        <footer>© 2026 TechVision — <a href="privacy.html">Privacy</a> — <a href="cookie.html">Cookie Policy</a></footer>
         <script src="js/script.js"></script>
     </body>
 </html>
