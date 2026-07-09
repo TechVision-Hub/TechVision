@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guida a Windows: impostazioni e prestazioni - TechVision</title>
+        <meta name="description" content="Come velocizzare l'avvio, gestire i programmi in background e tenere Windows in ordine senza software di terze parti.">
+        <link rel="icon" type="image/svg+xml" href="../immagini/favicon.svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>TechVision</h1>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">menu ☰</button>
+            <nav id="main-nav">
+                <a href="../index.html">Home</a>
+                <a href="../articoli.html" aria-current="page">Articoli</a>
+                <a href="../contatti.html">Contatti</a>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <div class="page-head">
+                    <p class="breadcrumb"><a href="../index.html">home</a><span class="sep">/</span><a href="../articoli.html">articoli</a><span class="sep">/</span><span class="current">guida-windows</span></p>
+                    <div class="meta-row"><span class="tag">windows</span><span>8 min di lettura</span></div>
+                    <h1>Guida a Windows: impostazioni e prestazioni</h1>
+                    <p class="lede">Windows funziona bene appena installato, ma dopo mesi di utilizzo tende ad accumulare programmi, processi e abitudini che lo rallentano. Ecco come rimetterlo in forma senza installare software di terze parti.</p>
+                </div>
+
+                <div class="prose">
+                    <h2>Controlla cosa parte all'avvio</h2>
+                    <p>La causa più comune di un avvio lento è la quantità di programmi che si aprono automaticamente insieme a Windows. Molti di questi non servono nell'immediato e possono essere disattivati senza problemi.</p>
+                    <ol>
+                        <li>Apri il <strong>Task Manager</strong> con <code>Ctrl + Shift + Esc</code>.</li>
+                        <li>Vai nella scheda <strong>Avvio</strong>.</li>
+                        <li>Disattiva le voci con impatto "Alto" che non usi appena accendi il PC (client di chat, launcher di giochi, aggiornatori).</li>
+                    </ol>
+                    <blockquote class="note"><strong>Nota:</strong> disattivare una voce da qui non disinstalla il programma, impedisce solo che si avvii automaticamente.</blockquote>
+
+                    <h2>Libera spazio con Storage Sense</h2>
+                    <p>Windows include uno strumento che elimina automaticamente file temporanei, vecchi aggiornamenti e contenuti del cestino più vecchi di un certo numero di giorni.</p>
+                    <p>Si trova in <strong>Impostazioni → Sistema → Archiviazione</strong>, attivando l'opzione <strong>Storage Sense</strong>.</p>
+
+                    <h2>Aggiorna driver e sistema</h2>
+                    <p>Molti rallentamenti e blocchi improvvisi dipendono da driver datati, in particolare quelli della scheda video e del chipset. Un controllo rapido da riga di comando permette di vedere se ci sono aggiornamenti in sospeso:</p>
+
+                    <div class="code-block">
+                        <div class="code-bar"><span>powershell</span><button class="copy-btn" type="button">copia</button></div>
+                        <pre><code>Get-WindowsUpdate -Install -AcceptAll</code></pre>
+                    </div>
+                    <p class="muted">Il comando richiede il modulo <code>PSWindowsUpdate</code>; in alternativa è sufficiente passare da <strong>Impostazioni → Windows Update</strong>.</p>
+
+                    <h2>Tieni sotto controllo i processi in background</h2>
+                    <p>Alcune app continuano a girare anche quando sono chiuse, consumando RAM e batteria. Da <strong>Impostazioni → App → App e funzionalità in background</strong> puoi decidere quali app hanno il permesso di farlo.</p>
+
+                    <h2>Un'unica manutenzione periodica</h2>
+                    <ul>
+                        <li>Riavvia il PC almeno una volta a settimana, non solo metterlo in sospensione.</li>
+                        <li>Disinstalla i programmi che non usi da mesi.</li>
+                        <li>Controlla lo stato del disco con <code>chkdsk</code> se noti rallentamenti improvvisi.</li>
+                    </ul>
+                </div>
+
+                <nav class="article-nav">
+                    <a href="../articoli.html">← torna agli articoli</a>
+                    <a href="sicurezza-online.html">Sicurezza online →</a>
+                </nav>
+            </article>
+        </main>
+
+        <footer>© 2026 TechVision — <a href="../privacy.html">Privacy</a> — <a href="../cookie.html">Cookie Policy</a></footer>
+        <script src="../js/script.js"></script>
+    </body>
+</html>

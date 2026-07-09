@@ -2,16 +2,55 @@
 <html lang="it">
     <head>
         <meta charset="UTF-8">
-        <title>Articoli</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Articoli - TechVision</title>
+        <meta name="description" content="Tutte le guide di TechVision su Windows, Linux e sicurezza informatica.">
+        <link rel="icon" type="image/svg+xml" href="immagini/favicon.svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header><h1>Articoli</h1>
-            <a href="index.html">Home</a>
+        <header>
+            <h1>TechVision</h1>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">menu ☰</button>
+            <nav id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="articoli.html" aria-current="page">Articoli</a>
+                <a href="contatti.html">Contatti</a>
+            </nav>
         </header>
+
         <main>
-            <h2>Guide informatiche</h2>
-            <p>Presto qui verranno pubblicati nuovi articoli.</p>
+            <section class="page-head">
+                <p class="breadcrumb"><a href="index.html">home</a><span class="sep">/</span><span class="current">articoli</span></p>
+                <h1>Tutti gli articoli</h1>
+                <p class="lede">Guide pratiche su sistemi operativi, sicurezza e strumenti da riga di comando. Niente paroloni inutili: solo quello che serve per capire e agire.</p>
+            </section>
+
+            <section class="article-grid" aria-label="Elenco articoli">
+                <article class="article-card">
+                    <div class="meta-row"><span class="tag">windows</span><span>8 min</span></div>
+                    <h3><a href="articoli/guida-windows.html">Guida a Windows: impostazioni e prestazioni</a></h3>
+                    <p>Come velocizzare l'avvio, gestire i programmi in background e tenere il sistema in ordine senza software di terze parti.</p>
+                </article>
+
+                <article class="article-card">
+                    <div class="meta-row"><span class="tag">sicurezza</span><span>7 min</span></div>
+                    <h3><a href="articoli/sicurezza-online.html">Sicurezza online: come proteggere i tuoi dati</a></h3>
+                    <p>Password, autenticazione a due fattori e phishing: le basi per non farsi trovare impreparati.</p>
+                </article>
+
+                <article class="article-card">
+                    <div class="meta-row"><span class="tag">linux</span><span>9 min</span></div>
+                    <h3><a href="articoli/linux-per-principianti.html">Linux per principianti</a></h3>
+                    <p>Quale distribuzione scegliere, come muoversi nel terminale e i primi comandi da conoscere.</p>
+                </article>
+            </section>
         </main>
+
+        <footer>© 2026 TechVision — <a href="privacy.html">Privacy</a> — <a href="cookie.html">Cookie Policy</a></footer>
+        <script src="js/script.js"></script>
     </body>
 </html>

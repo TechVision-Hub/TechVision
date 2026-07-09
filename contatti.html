@@ -2,10 +2,60 @@
 <html lang="it">
     <head>
         <meta charset="UTF-8">
-        <title>Contatti</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contatti - TechVision</title>
+        <meta name="description" content="Scrivi a TechVision per collaborazioni, segnalazioni o domande sugli articoli.">
+        <link rel="icon" type="image/svg+xml" href="immagini/favicon.svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h1>Contatti</h1>
-        <p>Email: jointechvision@gmail.com</p>
+        <header>
+            <h1>TechVision</h1>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">menu ☰</button>
+            <nav id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="articoli.html">Articoli</a>
+                <a href="contatti.html" aria-current="page">Contatti</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="page-head">
+                <p class="breadcrumb"><a href="index.html">home</a><span class="sep">/</span><span class="current">contatti</span></p>
+                <h1>Contatti</h1>
+                <p class="lede">Hai una domanda, un suggerimento per un articolo o hai trovato un errore in una guida? Scrivici.</p>
+            </section>
+
+            <div class="two-col">
+                <form class="form" novalidate>
+                    <div class="field">
+                        <label for="nome">nome</label>
+                        <input type="text" id="nome" name="nome" autocomplete="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="messaggio">messaggio</label>
+                        <textarea id="messaggio" name="messaggio" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">invia →</button>
+                    <p class="form-status" role="status" aria-live="polite"></p>
+                </form>
+
+                <aside class="contact-info">
+                    <div class="item"><span>email:</span> info@techvision.example</div>
+                    <div class="item"><span>risposta media:</span> 2-3 giorni lavorativi</div>
+                    <div class="item"><span>argomenti graditi:</span> hardware, software, sicurezza, Linux</div>
+                </aside>
+            </div>
+        </main>
+
+        <footer>© 2026 TechVision — <a href="privacy.html">Privacy</a> — <a href="cookie.html">Cookie Policy</a></footer>
+        <script src="js/script.js"></script>
     </body>
 </html>

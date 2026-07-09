@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Linux per principianti - TechVision</title>
+        <meta name="description" content="Quale distribuzione Linux scegliere, come muoversi nel terminale e i primi comandi da conoscere.">
+        <link rel="icon" type="image/svg+xml" href="../immagini/favicon.svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>TechVision</h1>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">menu ☰</button>
+            <nav id="main-nav">
+                <a href="../index.html">Home</a>
+                <a href="../articoli.html" aria-current="page">Articoli</a>
+                <a href="../contatti.html">Contatti</a>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <div class="page-head">
+                    <p class="breadcrumb"><a href="../index.html">home</a><span class="sep">/</span><a href="../articoli.html">articoli</a><span class="sep">/</span><span class="current">linux-per-principianti</span></p>
+                    <div class="meta-row"><span class="tag">linux</span><span>9 min di lettura</span></div>
+                    <h1>Linux per principianti</h1>
+                    <p class="lede">Passare a Linux sembra un salto nel vuoto solo la prima volta. In realtà, con la distribuzione giusta e pochi comandi base, ci si trova a proprio agio in pochi giorni.</p>
+                </div>
+
+                <div class="prose">
+                    <h2>Quale distribuzione scegliere</h2>
+                    <p>Una distribuzione ("distro") è una versione di Linux con un proprio sistema di installazione dei programmi, un'interfaccia grafica predefinita e un ritmo di aggiornamenti. Per chi arriva da Windows o macOS, tre opzioni si distinguono per facilità d'uso:</p>
+                    <ul>
+                        <li><strong>Linux Mint</strong>: interfaccia familiare, molto stabile, ottima per un primo approccio.</li>
+                        <li><strong>Ubuntu</strong>: la distro più documentata online, quindi facile trovare soluzioni ai problemi.</li>
+                        <li><strong>Fedora</strong>: più aggiornata, adatta a chi vuole software recente senza rinunciare alla stabilità.</li>
+                    </ul>
+
+                    <h2>Il terminale non è un ostacolo</h2>
+                    <p>Su Linux gran parte delle operazioni si può fare anche solo con il mouse, ma il terminale resta lo strumento più rapido per molte attività. Non serve impararlo tutto subito: bastano pochi comandi per orientarsi.</p>
+
+                    <div class="code-block">
+                        <div class="code-bar"><span>bash</span><button class="copy-btn" type="button">copia</button></div>
+                        <pre><code>pwd                 # mostra la cartella in cui ti trovi
+ls -la              # elenca i file, inclusi quelli nascosti
+cd Documenti        # entra nella cartella "Documenti"
+mkdir progetti      # crea una nuova cartella
+cp file.txt backup/ # copia un file in un'altra cartella</code></pre>
+                    </div>
+
+                    <h2>Installare programmi</h2>
+                    <p>A differenza di Windows, i programmi si installano quasi sempre tramite un "gestore di pacchetti" invece di scaricare file .exe da internet. Su Ubuntu e derivate, ad esempio:</p>
+                    <div class="code-block">
+                        <div class="code-bar"><span>bash</span><button class="copy-btn" type="button">copia</button></div>
+                        <pre><code>sudo apt update
+sudo apt install nome-programma</code></pre>
+                    </div>
+                    <p class="muted"><code>sudo</code> esegue il comando con permessi da amministratore; il sistema chiederà la tua password.</p>
+
+                    <h2>Il file system funziona diversamente</h2>
+                    <p>Non esistono lettere come <code>C:</code>. Tutto parte da una singola radice, indicata con <code>/</code>, e i dispositivi collegati vengono "montati" in sottocartelle di questa struttura.</p>
+                    <blockquote class="note"><strong>Nota:</strong> la cartella personale dell'utente si trova di solito in <code>/home/nome-utente</code>, l'equivalente di "Documenti e Impostazioni" su Windows.</blockquote>
+
+                    <h2>Primi passi consigliati</h2>
+                    <ol>
+                        <li>Prova la distro da una chiavetta USB avviabile prima di installarla, senza toccare il sistema esistente.</li>
+                        <li>Fai un backup dei tuoi dati prima di qualsiasi installazione definitiva.</li>
+                        <li>Impara i comandi base elencati sopra: coprono la maggior parte delle esigenze quotidiane.</li>
+                    </ol>
+                </div>
+
+                <nav class="article-nav">
+                    <a href="sicurezza-online.html">← Sicurezza online</a>
+                    <a href="../articoli.html">torna agli articoli →</a>
+                </nav>
+            </article>
+        </main>
+
+        <footer>© 2026 TechVision — <a href="../privacy.html">Privacy</a> — <a href="../cookie.html">Cookie Policy</a></footer>
+        <script src="../js/script.js"></script>
+    </body>
+</html>

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TechVision - Informatica e Tecnologia</title>
         <meta name="description" content="TechVision: guide, tutorial e novità su hardware, software, sicurezza e tecnologia, spiegati in modo semplice.">
+        <link rel="icon" type="image/svg+xml" href="immagini/favicon.svg">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -13,7 +14,8 @@
     <body>
         <header>
             <h1>TechVision</h1>
-            <nav>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">menu ☰</button>
+            <nav id="main-nav">
                 <a href="index.html" aria-current="page">Home</a>
                 <a href="articoli.html">Articoli</a>
                 <a href="contatti.html">Contatti</a>
@@ -44,22 +46,22 @@
                 </div>
                 <div class="cards">
                     <article class="card">
-                        <div class="card-head"><span>assemblare-un-pc</span><span class="ext">.md</span></div>
-                        <h3>Assemblare un PC</h3>
-                        <p>Guida per scegliere i componenti giusti.</p>
-                        <a class="read-more" href="articoli.html">leggi →</a>
+                        <div class="card-head"><span>guida-windows</span><span class="ext">.md</span></div>
+                        <h3>Guida a Windows</h3>
+                        <p>Impostazioni, prestazioni e trucchi essenziali per usarlo al meglio.</p>
+                        <a class="read-more" href="articoli/guida-windows.html">leggi →</a>
                     </article>
                     <article class="card">
                         <div class="card-head"><span>sicurezza-online</span><span class="ext">.md</span></div>
                         <h3>Sicurezza online</h3>
-                        <p>Come proteggere i tuoi dati.</p>
-                        <a class="read-more" href="articoli.html">leggi →</a>
+                        <p>Come proteggere i tuoi dati e riconoscere le minacce più comuni.</p>
+                        <a class="read-more" href="articoli/sicurezza-online.html">leggi →</a>
                     </article>
                     <article class="card">
                         <div class="card-head"><span>linux-per-principianti</span><span class="ext">.md</span></div>
                         <h3>Linux per principianti</h3>
-                        <p>Primi passi nel mondo Linux.</p>
-                        <a class="read-more" href="articoli.html">leggi →</a>
+                        <p>Primi passi nel mondo Linux: distribuzioni, terminale e file system.</p>
+                        <a class="read-more" href="articoli/linux-per-principianti.html">leggi →</a>
                     </article>
                 </div>
             </section>
